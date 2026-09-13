@@ -1,0 +1,14 @@
+{
+  "name": "catalyst-pm",
+  "description": "Linear backlog grooming — orphan, stale, misplaced, and duplicate ticket detection.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Coalesce Labs"
+  },
+  "skills": [
+    "./skills/groom-backlog"
+  ],
+  "agents": [
+    "./skills/groom-backlog/agents/backlog-analyzer.md"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@coalesce-labs/catalyst-pm-skills",
+  "version": "1.0.0",
+  "description": "Catalyst PM skills: Linear backlog grooming — orphan, stale, misplaced, and duplicate ticket detection. Cross-harness, installable with `npx skills`.",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coalesce-labs/catalyst-pm-skills.git"
+  },
+  "homepage": "https://github.com/coalesce-labs/catalyst-pm-skills#readme",
+  "bugs": {
+    "url": "https://github.com/coalesce-labs/catalyst-pm-skills/issues"
+  },
+  "keywords": [
+    "agent-skills",
+    "skills",
+    "project-management",
+    "linear",
+    "backlog",
+    "catalyst"
+  ],
+  "files": [
+    "skills",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
+}

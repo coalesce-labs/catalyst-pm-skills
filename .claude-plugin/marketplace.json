@@ -1,0 +1,13 @@
+{
+  "name": "catalyst-pm-skills",
+  "owner": {
+    "name": "Coalesce Labs"
+  },
+  "plugins": [
+    {
+      "name": "catalyst-pm",
+      "source": "./",
+      "description": "Linear backlog grooming — orphan, stale, misplaced, and duplicate ticket detection."
+    }
+  ]
+}
