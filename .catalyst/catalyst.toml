@@ -1,0 +1,16 @@
+#:schema https://staging.catalystcloud.dev/schemas/catalyst.schema.json
+# This repository belongs to the CTC Catalyst project, whose home repository is coalesce-labs/catalyst-cloud.
+
+[project]
+linear_team = "CTC"
+
+# A skills-only repository: no dependencies to install. The verify step is the frontmatter part of the ci.yml gate.
+[environment]
+toolchains = [{ name = "node", version = "22" }]
+
+[environment.container]
+git = { submodules = false, lfs = false }
+
+[[environment.verify]]
+name = "skill-frontmatter"
+run = ["sh", "-lc", "set -e; for f in skills/*/SKILL.md; do head -1 \"$f\" | grep -qx -- '---'; grep -q '^name: *[^ ]' \"$f\"; grep -q '^description:' \"$f\"; done"]
